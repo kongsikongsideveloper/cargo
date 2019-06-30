@@ -1,0 +1,6 @@
+[25-Feb-2019 16:49:28 UTC] PHP Warning:  move_uploaded_file(../userdata/imgs/54ed0127-d680-4e47-9e16-19c9d6bb6c9b): failed to open stream: No such file or directory in /home/kongsi/public_html/kongsi/php/upload-proof.php on line 8
+[25-Feb-2019 16:49:28 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpfyry1E' to '../userdata/imgs/54ed0127-d680-4e47-9e16-19c9d6bb6c9b' in /home/kongsi/public_html/kongsi/php/upload-proof.php on line 8
+[21-Apr-2019 17:53:19 UTC] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /home/kongsi/public_html/kongsi/php/upload-image.php on line 3
+[21-Apr-2019 17:53:19 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpT3wXSU' to '../userdata/imgs/' in /home/kongsi/public_html/kongsi/php/upload-image.php on line 3
+[21-Apr-2019 17:55:13 UTC] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /home/kongsi/public_html/kongsi/php/upload-image.php on line 3
+[21-Apr-2019 17:55:13 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpI8p73l' to '../userdata/imgs/' in /home/kongsi/public_html/kongsi/php/upload-image.php on line 3

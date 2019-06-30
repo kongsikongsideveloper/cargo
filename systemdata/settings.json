@@ -1,0 +1,358 @@
+{
+  "settings": {
+    "prefixes": {
+      "tsel": [
+        {"prefix": "0811"},
+        {"prefix": "0812"},
+        {"prefix": "0813"},
+        {"prefix": "0821"},
+        {"prefix": "0822"},
+        {"prefix": "0823"},
+        {"prefix": "0852"},
+        {"prefix": "0853"},
+        {"prefix": "0851"}
+      ],
+      "indosat": [
+        {"prefix": "0814"},
+        {"prefix": "0815"},
+        {"prefix": "0816"},
+        {"prefix": "0855"},
+        {"prefix": "0856"},
+        {"prefix": "0857"},
+        {"prefix": "0858"}
+      ],
+      "xl": [
+        {"prefix": "0817"},
+        {"prefix": "0818"},
+        {"prefix": "0819"},
+        {"prefix": "0859"},
+        {"prefix": "0877"},
+        {"prefix": "0878"}
+      ],
+      "three": [
+        {"prefix": "0895"},
+        {"prefix": "0896"},
+        {"prefix": "0897"},
+        {"prefix": "0898"},
+        {"prefix": "0899"}
+      ],
+      "smartfren": [
+        {"prefix": "0881"},
+        {"prefix": "0882"},
+        {"prefix": "0883"},
+        {"prefix": "0884"},
+        {"prefix": "0885"},
+        {"prefix": "0886"},
+        {"prefix": "0887"},
+        {"prefix": "0888"},
+        {"prefix": "0889"}
+      ],
+      "axis": [
+        {"prefix": "0838"},
+        {"prefix": "0831"},
+        {"prefix": "0832"},
+        {"prefix": "0833"}
+      ]
+    },
+    "prices": {
+      "pricePerKM": 2000,
+      "topup": {
+        "xl": [
+          {
+            "balance": 5000,
+            "price": 6501
+          },
+          {
+            "balance": 10000,
+            "price": 10501
+          },
+          {
+            "balance": 20000,
+            "price": 20501
+          },
+          {
+            "balance": 50000,
+            "price": 50501
+          },
+          {
+            "balance": 100000,
+            "price": 100501
+          }
+        ],
+        "axis": [
+          {
+            "balance": 5000,
+            "price": 6505
+          },
+          {
+            "balance": 10000,
+            "price": 10505
+          },
+          {
+            "balance": 20000,
+            "price": 20505
+          },
+          {
+            "balance": 50000,
+            "price": 50505
+          },
+          {
+            "balance": 100000,
+            "price": 100505
+          }
+        ],
+        "tsel": [
+          {
+            "balance": 5000,
+            "price": 6502
+          },
+          {
+            "balance": 10000,
+            "price": 10502
+          },
+          {
+            "balance": 20000,
+            "price": 20502
+          },
+          {
+            "balance": 50000,
+            "price": 50502
+          },
+          {
+            "balance": 100000,
+            "price": 100502
+          }
+        ],
+        "indosat": [
+          {
+            "balance": 5000,
+            "price": 6503
+          },
+          {
+            "balance": 10000,
+            "price": 10503
+          },
+          {
+            "balance": 20000,
+            "price": 20503
+          },
+          {
+            "balance": 50000,
+            "price": 50503
+          },
+          {
+            "balance": 100000,
+            "price": 100503
+          }
+        ],
+        "smartfren": [
+          {
+            "balance": 5000,
+            "price": 6504
+          },
+          {
+            "balance": 10000,
+            "price": 10504
+          },
+          {
+            "balance": 20000,
+            "price": 20504
+          },
+          {
+            "balance": 50000,
+            "price": 50504
+          },
+          {
+            "balance": 100000,
+            "price": 100504
+          }
+        ],
+        "three": [
+          {
+            "balance": 5000,
+            "price": 6505
+          },
+          {
+            "balance": 10000,
+            "price": 10505
+          },
+          {
+            "balance": 20000,
+            "price": 20505
+          },
+          {
+            "balance": 50000,
+            "price": 50505
+          },
+          {
+            "balance": 100000,
+            "price": 100505
+          }
+        ]
+      },
+      "data": {
+        "xl": [
+          {
+            "balance": 5000,
+            "price": 6501
+          },
+          {
+            "balance": 10000,
+            "price": 10501
+          },
+          {
+            "balance": 20000,
+            "price": 20501
+          },
+          {
+            "balance": 50000,
+            "price": 50501
+          },
+          {
+            "balance": 100000,
+            "price": 100501
+          }
+        ],
+        "axis": [
+          {
+            "balance": 5000,
+            "price": 6505
+          },
+          {
+            "balance": 10000,
+            "price": 10505
+          },
+          {
+            "balance": 20000,
+            "price": 20505
+          },
+          {
+            "balance": 50000,
+            "price": 50505
+          },
+          {
+            "balance": 100000,
+            "price": 100505
+          }
+        ],
+        "tsel": [
+          {
+            "balance": 5000,
+            "price": 6502
+          },
+          {
+            "balance": 10000,
+            "price": 10502
+          },
+          {
+            "balance": 20000,
+            "price": 20502
+          },
+          {
+            "balance": 50000,
+            "price": 50502
+          },
+          {
+            "balance": 100000,
+            "price": 100502
+          }
+        ],
+        "indosat": [
+          {
+            "balance": 5000,
+            "price": 6503
+          },
+          {
+            "balance": 10000,
+            "price": 10503
+          },
+          {
+            "balance": 20000,
+            "price": 20503
+          },
+          {
+            "balance": 50000,
+            "price": 50503
+          },
+          {
+            "balance": 100000,
+            "price": 100503
+          }
+        ],
+        "smartfren": [
+          {
+            "balance": 5000,
+            "price": 6504
+          },
+          {
+            "balance": 10000,
+            "price": 10504
+          },
+          {
+            "balance": 20000,
+            "price": 20504
+          },
+          {
+            "balance": 50000,
+            "price": 50504
+          },
+          {
+            "balance": 100000,
+            "price": 100504
+          }
+        ],
+        "three": [
+          {
+            "balance": 5000,
+            "price": 6505
+          },
+          {
+            "balance": 10000,
+            "price": 10505
+          },
+          {
+            "balance": 20000,
+            "price": 20505
+          },
+          {
+            "balance": 50000,
+            "price": 50505
+          },
+          {
+            "balance": 100000,
+            "price": 100505
+          }
+        ]
+      },
+      "pln": {
+		"pricePerKWH": 1000,
+		"prices": [
+		  {
+            "amount": 1,
+            "price": 997
+          },
+		  {
+            "amount": 5,
+            "price": 4985
+          },
+		  {
+            "amount": 10,
+            "price": 9970
+          },
+		  {
+            "amount": 100,
+            "price": 99700
+          },
+		  {
+            "amount": 200,
+            "price": 199400
+          },
+		  {
+            "amount": 500,
+            "price": 498500
+          }
+		]
+	  }
+    }
+  }
+}
