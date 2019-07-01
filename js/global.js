@@ -97,8 +97,32 @@ function openOrders() {
     window.location.href = "orders.html";
 }
 
-function openTopUps() {
+function openMobileTopUps() {
     window.location.href = "topups.html";
+}
+
+function openDataTopUps() {
+    window.location.href = "data.html";
+}
+
+function openElectricityTopUps() {
+    window.location.href = "electricity.html";
+}
+
+function openWithdraws() {
+    window.location.href = "withdraws.html";
+}
+
+function openPrices() {
+    window.location.href = "prices.html";
+}
+
+function openReferralCodes() {
+    window.location.href = "referrals.html";
+}
+
+function openVoucherCodes() {
+    window.location.href = "vouchers.html";
 }
 
 function openTrucks() {

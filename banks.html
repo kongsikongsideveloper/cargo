@@ -12,40 +12,82 @@
 <body>
 <div style="width: 100%; height: 100%; display: flex; flex-flow: row nowrap; position: fixed; left: 0; top: 0;">
     <div style="width: 200px; height: 100%; background-color: #2e2f4d; display: flex; flex-flow: column nowrap; overflow-y: scroll;">
-        <div style="width: 100%; height: 100px; display: flex; justify-content: center; align-items: center;">
-            <img src="img/icon.png" width="60px" height="60px">
+        <div style="width: 200px; height: 100%; background-color: #2e2f4d; display: flex; flex-flow: column nowrap; overflow-y: scroll;">
+            <div style="width: 100%; height: 100px; display: flex; justify-content: center; align-items: center;">
+                <img src="img/icon.png" width="60px" height="60px">
+            </div>
+            <div onclick="openAdmins()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/admin.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Admin</div>
+            </div>
+            <div onclick="openUsers()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/user-2.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Pengguna</div>
+            </div>
+            <div onclick="openDrivers()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/driver.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Driver</div>
+            </div>
+            <div onclick="openBanks()" class="menu-item-active" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/bank.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Nomor Rekening</div>
+            </div>
+            <div onclick="openTrucks()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/truck.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Kendaraan</div>
+            </div>
+            <div onclick="openOrders()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/money.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Pesanan</div>
+            </div>
+            <div onclick="openPrices()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/price.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Biaya Standar</div>
+            </div>
+            <div onclick="openMobileTopUps()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/phone-2.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Top Up Pulsa</div>
+            </div>
+            <div onclick="openDataTopUps()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/data.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Top Up Data</div>
+            </div>
+            <div onclick="openElectricityTopUps()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/electricity.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Top Up Listrik</div>
+            </div>
+            <div onclick="openWithdraws()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/withdraw.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Withdraw</div>
+            </div>
+            <div onclick="openVoucherCodes()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/voucher.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Kode Voucher</div>
+            </div>
+            <div onclick="logout()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+                <img src="img/logout.png" width="20px" height="20px">
+                <div style="margin-left: 10px;">Keluar</div>
+            </div>
         </div>
-        <div onclick="openAdmins()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
-            <img src="img/admin.png" width="20px" height="20px">
-            <div style="margin-left: 10px;">Admin</div>
-        </div>
-        <div onclick="openUsers()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
-            <img src="img/user-2.png" width="20px" height="20px">
-            <div style="margin-left: 10px;">Pengguna</div>
-        </div>
-        <div onclick="openDrivers()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
-            <img src="img/driver.png" width="20px" height="20px">
-            <div style="margin-left: 10px;">Driver</div>
-        </div>
-        <div onclick="openBanks()" class="menu-item-active" style="margin-left: 10px; margin-top: 5px;">
-            <img src="img/bank.png" width="20px" height="20px">
-            <div style="margin-left: 10px;">Nomor Rekening</div>
-        </div>
-        <div onclick="openTrucks()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
-            <img src="img/truck.png" width="20px" height="20px">
-            <div style="margin-left: 10px;">Kendaraan</div>
-        </div>
-        <div onclick="openOrders()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
-            <img src="img/money.png" width="20px" height="20px">
-            <div style="margin-left: 10px;">Pesanan</div>
-        </div>
-        <div onclick="openTopUps()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
-            <img src="img/phone-2.png" width="20px" height="20px">
-            <div style="margin-left: 10px;">Top Up</div>
-        </div>
-        <div onclick="logout()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
-            <img src="img/logout.png" width="20px" height="20px">
-            <div style="margin-left: 10px;">Keluar</div>
+        <div style="width: calc(100% - 200px); display: flex; flex-flow: column nowrap; padding-top: 30px; overflow-y: scroll;">
+            <div style="display: flex; flex-flow: row nowrap; margin-left: 20px;">
+                <img src="img/settings-2.png" width="50px" height="50px">
+                <div style="margin-left: 10px; font-size: 25px; color: #717179;">Daftar Pesanan</div>
+            </div>
+            <table class="flat-table" style="width: 1000px; margin-left: 20px; margin-top: 10px;">
+                <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Dari &#8594; Ke</th>
+                    <th>Tanggal</th>
+                    <th>Lihat</th>
+                    <th>Hapus</th>
+                </tr>
+                </thead>
+                <tbody id="orders">
+                </tbody>
+            </table>
+            <div>&nbsp;</div>
         </div>
     </div>
     <div style="width: calc(100% - 200px); display: flex; flex-flow: column nowrap; padding-top: 30px; overflow-y: scroll;">

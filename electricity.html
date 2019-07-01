@@ -2,17 +2,19 @@
 <html>
 <head>
     <script src="js/jquery.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/electricity.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.2/firebase-database.js"></script>
     <script>
         var firebaseConfig = {
-            apiKey: "AIzaSyDU4WAQqekeMuWkXCM5HspHnLxVtjaXwmQ",
-            authDomain: "android-kongsi-c-1550136087586.firebaseapp.com",
-            databaseURL: "https://android-kongsi-c-1550136087586.firebaseio.com",
-            projectId: "android-kongsi-c-1550136087586",
-            storageBucket: "android-kongsi-c-1550136087586.appspot.com",
-            messagingSenderId: "244160677702",
-            appId: "1:244160677702:web:edb40ef604d80124"
+            apiKey: "AIzaSyBIQHNnSDMf_BNX-hlQRH4A4mGm0o7iJEc",
+            authDomain: "food-delivery-e9a7e.firebaseapp.com",
+            databaseURL: "https://food-delivery-e9a7e.firebaseio.com",
+            projectId: "food-delivery-e9a7e",
+            storageBucket: "food-delivery-e9a7e.appspot.com",
+            messagingSenderId: "680216534990",
+            appId: "1:680216534990:web:a753244f5f9a1b8e"
         };
         firebase.initializeApp(firebaseConfig);
     </script>
@@ -21,15 +23,13 @@
             type="text/javascript" charset="utf-8"></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
             type="text/javascript" charset="utf-8"></script>
-    <script src="js/global.js"></script>
-    <script src="js/vehicles.js"></script>
     <link href="css/global.css" rel="stylesheet">
     <link href="img/icon.png" rel="icon">
-    <title>Kendaraan</title>
+    <title>Pesanan</title>
 </head>
 <body>
 <div style="width: 100%; height: 100%; display: flex; flex-flow: row nowrap; position: fixed; left: 0; top: 0;">
-    <div style="width: 200px; height: 100%; background-color: #2e2f4d; display: flex; flex-flow: column nowrap; overflow-y: scroll;">
+    <div style="width: 200px; height: 100%; background-color: #2e2f4d; display: flex; flex-flow: column nowrap; overflow: hidden;">
         <div style="width: 200px; height: 100%; background-color: #2e2f4d; display: flex; flex-flow: column nowrap; overflow-y: scroll;">
             <div style="width: 100%; height: 100px; display: flex; justify-content: center; align-items: center;">
                 <img src="img/icon.png" width="60px" height="60px">
@@ -50,7 +50,7 @@
                 <img src="img/bank.png" width="20px" height="20px">
                 <div style="margin-left: 10px;">Nomor Rekening</div>
             </div>
-            <div onclick="openTrucks()" class="menu-item-active" style="margin-left: 10px; margin-top: 5px;">
+            <div onclick="openTrucks()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
                 <img src="img/truck.png" width="20px" height="20px">
                 <div style="margin-left: 10px;">Kendaraan</div>
             </div>
@@ -70,7 +70,7 @@
                 <img src="img/data.png" width="20px" height="20px">
                 <div style="margin-left: 10px;">Top Up Data</div>
             </div>
-            <div onclick="openElectricityTopUps()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+            <div onclick="openElectricityTopUps()" class="menu-item-active" style="margin-left: 10px; margin-top: 5px;">
                 <img src="img/electricity.png" width="20px" height="20px">
                 <div style="margin-left: 10px;">Top Up Listrik</div>
             </div>
@@ -111,41 +111,63 @@
     <div style="width: calc(100% - 200px); display: flex; flex-flow: column nowrap; padding-top: 30px; overflow-y: scroll;">
         <div style="display: flex; flex-flow: row nowrap; margin-left: 20px;">
             <img src="img/settings-2.png" width="50px" height="50px">
-            <div style="margin-left: 10px; font-size: 25px; color: #717179;">Daftar Kendaraan</div>
-        </div>
-        <div style="display: flex; justify-content: flex-end; width: 1000px; margin-left: 20px;">
-            <button onclick="addVehicle()" class="button6">Tambah Kendaraan</button>
+            <div style="margin-left: 10px; font-size: 25px; color: #717179;">Daftar Pesanan</div>
         </div>
         <table class="flat-table" style="width: 1000px; margin-left: 20px; margin-top: 10px;">
             <thead>
             <tr>
                 <th>No.</th>
                 <th>Nama</th>
-                <th>Harga per KM</th>
-                <th>Ubah</th>
+                <th>Jumlah</th>
+                <th>Tanggal</th>
+                <th>Status</th>
+                <th>Lihat</th>
                 <th>Hapus</th>
             </tr>
             </thead>
-            <tbody id="vehicles">
+            <tbody id="topups">
             </tbody>
         </table>
         <div>&nbsp;</div>
     </div>
 </div>
-<div id="edit-vehicle-container"
+<div id="view-topup-container"
      style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; display: none; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, .5); overflow-y: scroll;">
-    <div style="width: 500px; border-radius: 5px; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .7); background-color: white; display: flex; flex-flow: column nowrap; overflow-y: scroll;">
+    <div style="width: 500px; height: calc(100% - 60px); border-radius: 5px; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .7); background-color: white; display: flex; flex-flow: column nowrap; overflow-y: scroll;">
         <div style="width: 100%; padding-top: 10px; padding-bottom: 10px; color: #333333; font-family: PalanquinBold;">
-            <div id="edit-vehicle-title" style="margin-left: 20px; margin-right: 20px;">Edit Pengguna</div>
+            <div id="edit-user-title" style="margin-left: 20px; margin-right: 20px;">Edit Pengguna</div>
         </div>
         <div style="width: 100%; height: 1px; background-color: rgba(0, 0, 0, .1);"></div>
-        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Nama Kendaraan:</div>
-        <input class="input2" id="edit-vehicle-name" type="text" style="margin-left: 20px; margin-right: 20px;">
-        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Harga per KM:</div>
-        <input class="input2" id="edit-vehicle-price" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Nama pembeli:</div>
+        <input class="input2" id="view-topup-buyer-name" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Nomor token:</div>
+        <input class="input2" id="view-topup-buyer-token" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Jumlah yg dibeli:</div>
+        <input class="input2" id="view-topup-nominal" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Nama pengirim:</div>
+        <input class="input2" id="view-topup-sender-name" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Bank pengirim:</div>
+        <input class="input2" id="view-topup-sender-bank" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Nomor rekening pengirim:</div>
+        <input class="input2" id="view-topup-sender-account" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Bank tujuan:</div>
+        <input class="input2" id="view-topup-receiver-bank" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Bukti transaksi:</div>
+        <div style="position: relative; width: calc(100% - 40px); height: 200px; margin-left: 20px; margin-right: 20px;">
+            <img id="view-topup-proof-img" width="100%" height="100%" style="position: absolute; left: 0; top: 0;">
+            <div id="view-topup-proof-img-zoom" style="cursor: pointer; position: absolute; bottom: 0; right: 0; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center;">
+                <img src="img/zoom.png" width="20px" height="20px">
+            </div>
+        </div>
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Tanggal:</div>
+        <input class="input2" id="view-topup-date" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Verifikasi sudah dikirim?</div>
+        <div style="width: calc(100% - 15px); display: flex; flex-flow: row nowrap; justify-content: center; margin-top: 10px; margin-right: 15px;">
+            <button id="verify-paid" class="button4">Verifikasi</button>
+        </div>
         <div style="width: calc(100% - 15px); display: flex; flex-flow: row nowrap; justify-content: flex-end; margin-top: 10px; margin-right: 15px;">
-            <button onclick="closeEditVehicleDialog()" class="button5">Batal</button>
-            <button id="edit-vehicle-ok" class="button4" style="margin-left: 5px;">Tambah</button>
+            <button onclick="closeViewTopupDialog()" class="button5">Batal</button>
+            <button id="view-topup-ok" class="button4" style="margin-left: 5px;">Tambah</button>
         </div>
         <div>&nbsp;</div>
         </input>
@@ -170,7 +192,8 @@
             <button id="confirm-cancel" class="button3"
                     style="margin-top: 10px; margin-bottom: 10px; margin-right: 10px;">Batal
             </button>
-            <button id="confirm-ok" class="button3" style="margin-top: 10px; margin-bottom: 10px; margin-right: 10px;">
+            <button id="confirm-ok" class="button3"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 10px;">
                 OK
             </button>
         </div>
@@ -186,6 +209,13 @@
      style="position: fixed; left: 0; bottom: 20px; width: 100%; display: none; justify-content: center;">
     <div id="toast-msg"
          style="border-radius: 5px; background-color: rgba(0, 0, 0, .8); color: white; height: 30px; padding-left: 20px; padding-right: 20px;"></div>
+</div>
+<div id="zoom-img-container"
+     style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; display: none; justify-content: center; align-items: center; background-color: #000000;">
+    <img id="zoom-img" width="100%" height="100%">
+    <div onclick="closeZoomImg()" style="cursor: pointer; width: 50px; height: 50px; position: absolute; top: 0; right: 0; display: flex; justify-content: center; align-items: center;">
+        <img src="img/close-3.png" width="20px" height="20px">
+    </div>
 </div>
 </body>
 </html>
