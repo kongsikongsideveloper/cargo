@@ -80,9 +80,40 @@ function setWithdrawClickListener() {
                     contentType: false,
                     cache: false,
                     success: function(response) {
-                        $("#edit-withdraw-container").fadeOut(300);
-                        show("Info penarikan diubah");
-                        getWithdraws();
+                        var fd = new FormData();
+                        fd.append("id", withdraw["user_id"]);
+                        $.ajax({
+                            type: 'POST',
+                            url: PHP_PATH + 'get-user-info.php',
+                            data: fd,
+                            processData: false,
+                            contentType: false,
+                            cache: false,
+                            success: function (response) {
+                                var userInfo = JSON.parse(response);
+                                var notification = {
+                                    "app_id": "b7699770-1386-42b2-8e6a-06e81cbf1c48",
+                                    "contents": {
+                                        "en": "Mohon cek jumlah saldo Anda"
+                                    },
+                                    "include_player_ids": [userInfo["one_signal_id"]],
+                                    "headings": {"en": "Saldo yang Anda minta sudah ditransfer"},
+                                    "data": {"en": {"type": "withdraw_finished", "withdraw_id": withdraw["id"]}}
+                                };
+                                $.ajax({
+                                    type: 'POST',
+                                    url: 'https://onesignal.com/api/v1/notifications',
+                                    data: JSON.stringify(notification),
+                                    dataType: 'json',
+                                    contentType: 'application/json; charset=utf-8',
+                                    success: function(response) {
+                                        $("#edit-withdraw-container").fadeOut(300);
+                                        show("Info penarikan diubah");
+                                        getWithdraws();
+                                    }
+                                });
+                            }
+                        });
                     }
                 });
             });

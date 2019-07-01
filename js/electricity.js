@@ -136,7 +136,7 @@ function setTopUpClickListener() {
                                         "en": "Mohon cek jumlah tagihan listrik Anda"
                                     },
                                     "include_player_ids": [userInfo["one_signal_id"]],
-                                    "headings": {"en": "Pulsa Anda sudah diisi"},
+                                    "headings": {"en": "Token listrik Anda sudah diisi"},
                                     "data": {"en": {"type": "electricity_top_up_finished", "top_up_id": topup["id"]}}
                                 };
                                 $.ajax({

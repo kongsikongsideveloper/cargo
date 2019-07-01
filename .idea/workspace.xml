@@ -4,7 +4,7 @@
     <list default="true" id="fad0f770-8cad-4345-b3dd-fb30ca8c409c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/electricity.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/electricity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/topups.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/topups.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/withdraws.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/withdraws.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="139" column="84" selection-start-line="139" selection-start-column="84" selection-end-line="139" selection-end-column="84" />
+            <state relative-caret-position="220">
+              <caret line="140" column="66" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
               </folding>
@@ -43,11 +43,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/electricity.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="139" column="72" selection-start-line="139" selection-start-column="72" selection-end-line="139" selection-end-column="72" />
+            <state relative-caret-position="225">
+              <caret line="138" column="63" selection-start-line="138" selection-start-column="63" selection-end-line="138" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/withdraws.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="94" column="55" lean-forward="true" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
               </folding>
@@ -59,7 +71,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Top Up Pulsa</find>
       <find>Top Up Data</find>
       <find>daftar</find>
       <find>order</find>
@@ -89,6 +100,7 @@
       <find>ubah kode voucher</find>
       <find>edit-voucher-title</find>
       <find>verify-</find>
+      <find>verify</find>
     </findStrings>
     <replaceStrings>
       <replace>AIzaSyCGRuJKanAEqfNhkAwwJ6hfJsPpGTzprlk</replace>
@@ -162,7 +174,6 @@
         <option value="$PROJECT_DIR$/php/verify-pending-electricity-topup.php" />
         <option value="$PROJECT_DIR$/php/get-withdraws.php" />
         <option value="$PROJECT_DIR$/php/verify-pending-withdraw.php" />
-        <option value="$PROJECT_DIR$/js/withdraws.js" />
         <option value="$PROJECT_DIR$/php/get-referrals.php" />
         <option value="$PROJECT_DIR$/js/referrals.js" />
         <option value="$PROJECT_DIR$/admins.html" />
@@ -184,8 +195,9 @@
         <option value="$PROJECT_DIR$/js/vouchers.js" />
         <option value="$PROJECT_DIR$/js/global.js" />
         <option value="$PROJECT_DIR$/js/topups.js" />
-        <option value="$PROJECT_DIR$/js/data.js" />
+        <option value="$PROJECT_DIR$/js/withdraws.js" />
         <option value="$PROJECT_DIR$/js/electricity.js" />
+        <option value="$PROJECT_DIR$/js/data.js" />
       </list>
     </option>
   </component>
@@ -348,12 +360,12 @@
       <workItem from="1561300409760" duration="5233000" />
       <workItem from="1561345591567" duration="17334000" />
       <workItem from="1561392705446" duration="7472000" />
-      <workItem from="1561891822136" duration="22102000" />
+      <workItem from="1561891822136" duration="22361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180906000" />
+    <option name="totallyTimeSpent" value="181165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1296" height="741" extended-state="6" />
@@ -564,16 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/withdraws.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="42" column="83" selection-start-line="42" selection-start-column="83" selection-end-line="42" selection-end-column="83" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1414,10 +1416,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/data.js">
+    <entry file="file://$PROJECT_DIR$/js/withdraws.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="139" column="84" selection-start-line="139" selection-start-column="84" selection-end-line="139" selection-end-column="84" />
+        <state relative-caret-position="250">
+          <caret line="94" column="55" lean-forward="true" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
           </folding>
@@ -1426,8 +1428,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/electricity.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="139" column="72" selection-start-line="139" selection-start-column="72" selection-end-line="139" selection-end-column="72" />
+        <state relative-caret-position="225">
+          <caret line="138" column="63" selection-start-line="138" selection-start-column="63" selection-end-line="138" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="140" column="66" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
           </folding>

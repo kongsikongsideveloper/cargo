@@ -138,7 +138,7 @@ function setTopUpClickListener() {
                                         "en": "Mohon cek jumlah paket data Anda"
                                     },
                                     "include_player_ids": [userInfo["one_signal_id"]],
-                                    "headings": {"en": "Pulsa Anda sudah diisi"},
+                                    "headings": {"en": "Paket data Anda sudah diisi"},
                                     "data": {"en": {"type": "data_top_up_finished", "top_up_id": topup["id"]}}
                                 };
                                 $.ajax({
