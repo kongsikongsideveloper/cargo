@@ -130,10 +130,28 @@ function setTopUpClickListener() {
                             contentType: false,
                             cache: false,
                             success: function(response) {
-                                hideProgress();
-                                show("Pembelian diverifikasi");
-                                $("#view-topup-container").fadeOut(300);
-                                getTopUps();
+                                var notification = {
+                                    "app_id": "b7699770-1386-42b2-8e6a-06e81cbf1c48",
+                                    "contents": {
+                                        "en": "Mohon cek jumlah tagihan listrik Anda"
+                                    },
+                                    "include_player_ids": [userInfo["one_signal_id"]],
+                                    "headings": {"en": "Pulsa Anda sudah diisi"},
+                                    "data": {"en": {"type": "electricity_top_up_finished", "top_up_id": topup["id"]}}
+                                };
+                                $.ajax({
+                                    type: 'POST',
+                                    url: 'https://onesignal.com/api/v1/notifications',
+                                    data: JSON.stringify(notification),
+                                    dataType: 'json',
+                                    contentType: 'application/json; charset=utf-8',
+                                    success: function(response) {
+                                        hideProgress();
+                                        show("Pembelian diverifikasi");
+                                        $("#view-topup-container").fadeOut(300);
+                                        getTopUps();
+                                    }
+                                });
                             }
                         });
                     });
