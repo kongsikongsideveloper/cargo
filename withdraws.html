@@ -61,6 +61,10 @@
             <img src="img/price.png" width="20px" height="20px">
             <div style="margin-left: 10px;">Biaya Standar</div>
         </div>
+        <div onclick="openFunds()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
+            <img src="img/withdraw.png" width="20px" height="20px">
+            <div style="margin-left: 10px;">Isi Saldo</div>
+        </div>
         <div onclick="openMobileTopUps()" class="menu-item" style="margin-left: 10px; margin-top: 5px;">
             <img src="img/phone-2.png" width="20px" height="20px">
             <div style="margin-left: 10px;">Top Up Pulsa</div>
@@ -116,15 +120,19 @@
             <div id="edit-withdraw-title" style="margin-left: 20px; margin-right: 20px;">Lihat Info Penarikan</div>
         </div>
         <div style="width: 100%; height: 1px; background-color: rgba(0, 0, 0, .1);"></div>
-        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Harga:</div>
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Nominal:</div>
         <input class="input2" id="edit-withdraw-price" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Jenis bank user:</div>
+        <input class="input2" id="edit-withdraw-bank-type" type="text" style="margin-left: 20px; margin-right: 20px;">
+        <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Nomor rekening user:</div>
+        <input class="input2" id="edit-withdraw-account-number" type="text" style="margin-left: 20px; margin-right: 20px;">
         <div style="color: #333333; font-family: PalanquinBold; margin-left: 20px; margin-right: 20px;">Sudah ditransfer?</div>
         <div style="width: calc(100% - 15px); display: flex; flex-flow: row nowrap; justify-content: center; margin-top: 10px; margin-right: 15px;">
             <button id="verify-transfered" class="button4">Verifikasi</button>
         </div>
         <div style="width: calc(100% - 15px); display: flex; flex-flow: row nowrap; justify-content: flex-end; margin-top: 10px; margin-right: 15px;">
             <button onclick="closeEditWithdrawDialog()" class="button5">Batal</button>
-            <button onclick="closeEditWithdrawDialog()" id="edit-withdraw-ok" class="button4" style="margin-left: 5px;">Ubah</button>
+            <button onclick="closeEditWithdrawDialog()" id="edit-withdraw-ok" class="button4" style="margin-left: 5px;">OK</button>
         </div>
         <div>&nbsp;</div>
     </div>

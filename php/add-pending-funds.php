@@ -10,3 +10,5 @@ $senderAccountNumber = $_POST["sender_account_number"];
 $receiverBankName = $_POST["receiver_bank_name"];
 $status = $_POST["status"];
 $c->query("INSERT INTO pending_funds (id, user_id, proof_img, date, amount, sender_name, sender_bank, sender_account_number, receiver_bank_name, status) VALUES ('" . uniqid() . "', '" . $userID . "', '" . $proofImg . "', " . round(microtime(true)*1000) . ", " . $amount . ", '" . $senderName . "', '" . $senderBank . "', '" . $senderAccountNumber . "', '" . $receiverBankName . "', '" . $status . "')");
+
+$c->query("INSERT INTO balance_history (user_id_1, amount, date, type) VALUES ('" . $userID . "', " . $amount . ", " . round(microtime(true)*1000) . ", 'add_funds')");

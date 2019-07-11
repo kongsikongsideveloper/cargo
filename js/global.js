@@ -1,5 +1,5 @@
-//const HOST = "localhost/kongsicargo";
-const HOST = "kongsikongsi.com/cargo";
+const HOST = "localhost/kongsicargo";
+//const HOST = "kongsikongsi.com/cargo";
 const PHP_PATH = "http://"+HOST+"/php/";
 const API_KEY = "AIzaSyCNA8fwTJhMu8ju9pdg08M5zBmninVPm5k";
 const HERE_APP_ID = "BqM8uW7Z8qDUrv8ZxlSX";
@@ -97,8 +97,12 @@ function openOrders() {
     window.location.href = "orders.html";
 }
 
+function openFunds() {
+    window.location.href = "funds.html";
+}
+
 function openMobileTopUps() {
-    window.location.href = "topups.html";
+    window.location.href = "mobile.html";
 }
 
 function openDataTopUps() {
