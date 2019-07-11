@@ -12,5 +12,5 @@ if ($results && $results->num_rows > 0) {
 	}
 	echo $totalRating/$totalRaters;
 } else {
-	echo -1;
+	echo 0;
 }

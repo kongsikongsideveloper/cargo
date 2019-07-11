@@ -2,37 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fad0f770-8cad-4345-b3dd-fb30ca8c409c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/funds.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/funds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/delete-pending-fund.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/delete-pending-withdraw.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/get-pending-funds.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/get-pending-withdraw.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/get-user-bank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/transfer-balance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/update-user-bank.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/verify-pending-fund.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admins.html" beforeDir="false" afterPath="$PROJECT_DIR$/admins.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banks.html" beforeDir="false" afterPath="$PROJECT_DIR$/banks.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers.html" beforeDir="false" afterPath="$PROJECT_DIR$/drivers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/electricity.html" beforeDir="false" afterPath="$PROJECT_DIR$/electricity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/topups.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/withdraws.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/withdraws.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/orders.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/add-pending-funds.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add-pending-funds.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/verify-pending-withdraw.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/verify-pending-withdraw.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/withdraw.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/withdraw.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prices.html" beforeDir="false" afterPath="$PROJECT_DIR$/prices.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/referrals.html" beforeDir="false" afterPath="$PROJECT_DIR$/referrals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topups.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicles.html" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vouchers.html" beforeDir="false" afterPath="$PROJECT_DIR$/vouchers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withdraws.html" beforeDir="false" afterPath="$PROJECT_DIR$/withdraws.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/get-rating.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/get-rating.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/update-location.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/update-profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/update-profile.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/php/signup-as-driver.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -70,11 +44,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/update-driver-one-signal-id.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/global.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -83,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/php/signup-as-user.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -188,7 +171,6 @@
         <option value="$PROJECT_DIR$/js/vouchers.js" />
         <option value="$PROJECT_DIR$/js/topups.js" />
         <option value="$PROJECT_DIR$/js/electricity.js" />
-        <option value="$PROJECT_DIR$/js/global.js" />
         <option value="$PROJECT_DIR$/php/get-pending-funds.php" />
         <option value="$PROJECT_DIR$/php/delete-pending-fund.php" />
         <option value="$PROJECT_DIR$/php/verify-pending-fund.php" />
@@ -219,6 +201,7 @@
         <option value="$PROJECT_DIR$/php/get-pending-electricity-topup.php" />
         <option value="$PROJECT_DIR$/php/get-pending-withdraw.php" />
         <option value="$PROJECT_DIR$/php/update-user-bank.php" />
+        <option value="$PROJECT_DIR$/js/global.js" />
       </list>
     </option>
   </component>
@@ -391,17 +374,18 @@
       <workItem from="1562754206118" duration="6857000" />
       <workItem from="1562772917059" duration="915000" />
       <workItem from="1562834839944" duration="6371000" />
+      <workItem from="1562853119031" duration="437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195346000" />
+    <option name="totallyTimeSpent" value="195783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1296" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -507,13 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/global.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="100" column="40" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1488,27 +1465,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/signup-as-user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/signup-as-driver.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/update-user-one-signal-id.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/signup-as-user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/update-driver-one-signal-id.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
