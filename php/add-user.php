@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+$userId = $_POST["user_id"];
 $email = $_POST["email"];
 $phone = $_POST["phone"];
 $pin = $_POST["pin"];
@@ -29,6 +30,6 @@ if ($results && $results->num_rows > 0) {
     echo -3;
     return;
 }
-$c->query("INSERT INTO users (email, phone, pin, first_name, last_name, profile_picture_url, confirmed, latitude, longitude, address, referral) VALUES ('" . $email . "', '" . $phone . "', '" . $pin . "', '" . $firstName . "', '" . $lastName . "', '" . $profilePictureURL . "', " . $confirmed . ", " . $latitude . ", " . $longitude . ", '" . $address . "', '" . $referral . "')");
+$c->query("INSERT INTO users (id, email, phone, pin, first_name, last_name, profile_picture_url, confirmed, latitude, longitude, address, referral) VALUES ('" . $userId . "', '" . $email . "', '" . $phone . "', '" . $pin . "', '" . $firstName . "', '" . $lastName . "', '" . $profilePictureURL . "', " . $confirmed . ", " . $latitude . ", " . $longitude . ", '" . $address . "', '" . $referral . "')");
 $userID = mysqli_insert_id($c);
 echo $userID;
